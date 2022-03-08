@@ -15,11 +15,10 @@ var passwordText;
 
 // Write password to the #password input
 function writePassword() {
-	var Password = generatePassword();
-
-	var passwordText = document.querySelector("#password");
+	var password = generatePassword();
+	var passwordText1 = document.querySelector("#password");
+	passwordText1.value = password;
 }
-// passwordText.value = password;
 
 function generatePassword() {
 	const Cletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -50,6 +49,10 @@ function generatePassword() {
 	if (SpcCharcfm) {
 		pwd = pwd.concat(SpcChar);
 	}
+	for (var i = 0; i < passLen; i++) {
+		passwordText = passwordText + i;
+	}
+	return passwordText;
 }
 
 // Add event listener to generate button
