@@ -5,7 +5,9 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+String letters= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+String Numbers= "0123456789";
+String splcChar+ "!@#$%^&*";
   passwordText.value = password;
 
 }
