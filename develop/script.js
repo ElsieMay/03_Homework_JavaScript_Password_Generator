@@ -8,7 +8,7 @@ var Cletters;
 var Lletters;
 var Numbers;
 var SpcChar;
-var pwd;
+var pwd = [];
 var passLen;
 var password;
 var passwordText;
@@ -22,23 +22,34 @@ function writePassword() {
 // passwordText.value = password;
 
 function generatePassword() {
-	const Cletters = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-	const Lletters = ["abcdefghijklmnopqrstuvwxyz"];
-	const Numbers = ["0123456789"];
-	const SpcChar = ["!@#$%^&*"];
-	var pwd = [];
+	const Cletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+	const Lletters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+	const Numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+	const SpcChar = ["!", "@", "#", "$", "%", "^", "&", "*"];
 
 	do {
-		var passLen = prompt("Please enter the password length required");
+		passLen = prompt("Please enter the password length required");
 	} while (passLen < 8 || passLen > 128);
 
-	var Cletterscfm = confirm("Would you like to include capital letters?");
+	do {
+		Cletterscfm = confirm("Would you like to include capital letters?");
+		Lletterscfm = confirm("Would you like to include lowercase letters?");
+		Numbrscfm = confirm("Would you like to include numbers?");
+		SpcCharcfm = confirm("Would you like to include special characters?");
+	} while (Cletterscfm === false && Lletterscfm === false && Numbrscfm === false && SpcCharcfm === false);
 
-	var Lletterscfm = confirm("Would you like to include lowercase letters?");
-
-	var Numbrscfm = confirm("Would you like to include numebrs?");
-
-	var SpcCharcfm = confirm("Would you like to include special characters?");
+	if (Cletterscfm) {
+		pwd = pwd.concat(Cletters);
+	}
+	if (Lletterscfm) {
+		pwd = pwd.concat(Lletters);
+	}
+	if (Numbrscfm) {
+		pwd = pwd.concat(Numbers);
+	}
+	if (SpcCharcfm) {
+		pwd = pwd.concat(SpcChar);
+	}
 }
 
 // Add event listener to generate button
