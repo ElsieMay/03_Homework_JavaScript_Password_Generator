@@ -23,7 +23,11 @@ The deployed application can be viewed via this link, https://elsiemay.github.io
 
 The Github repository can be viewed via this link, https://github.com/ElsieMay/03_Homework_JavaScript_Password_Generator.
 
-![Screenshots](https://github.com/ElsieMay/02_homework_professional-portfolio/blob/main/images/Screen%20Shot%202022-03-03%20at%2012.10.46%20am.png)
+![Screenshots](https://github.com/ElsieMay/03_Homework_JavaScript_Password_Generator/blob/main/assets/images/Screen%20Shot%202022-03-09%20at%209.09.45%20pm.png)
+
+![Screenshots](https://github.com/ElsieMay/03_Homework_JavaScript_Password_Generator/blob/main/assets/images/Screen%20Shot%202022-03-09%20at%209.09.52%20pm.png)
+
+![Screenshots](https://github.com/ElsieMay/03_Homework_JavaScript_Password_Generator/blob/main/assets/images/Screen%20Shot%202022-03-09%20at%209.09.58%20pm.png)
 
 ## Credits
 
