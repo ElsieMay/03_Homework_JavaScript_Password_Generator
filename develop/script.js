@@ -11,7 +11,7 @@ var SpcChar;
 var pwd = [];
 var passLen;
 var password;
-var passwordText;
+var passwordText = "";
 
 // Write password to the #password input
 function writePassword() {
@@ -50,7 +50,7 @@ function generatePassword() {
 		pwd = pwd.concat(SpcChar);
 	}
 	for (var i = 0; i < passLen; i++) {
-		passwordText = passwordText + i;
+		passwordText = passwordText + pwd[Math.floor(Math.random() * pwd.length)];
 	}
 	return passwordText;
 }
